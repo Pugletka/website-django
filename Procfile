@@ -1,1 +1,1 @@
-web: gunicorn RİP_4.wsgi --log-file -
+web: gunicorn RIP_4.wsgi --log-file -
