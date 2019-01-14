@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,6 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'tf49xi$e1(!t$a3(qlipgp2$dyfq-b7bk$#1mbkqhrf=46deu*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+import dj_database_url
+
+...
 
 DEBUG = False
 
@@ -142,3 +144,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 LOGIN_REDIRECT_URL = '/'
+
+#from whitenoise.django import DjangoWhiteNoise
+
+#application = DjangoWhiteNoise(application)
